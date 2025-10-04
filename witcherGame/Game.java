@@ -57,6 +57,7 @@ public class Game {
             System.out.println("3 - Walka z przeciwnikiem prostym");
             System.out.println("4 - Walka z przeciwnikiem trudnym");
             System.out.println("5 - Walka z finałowym przeciwnikiem");
+            System.out.println("6 - Karczmarz");
             System.out.println("0 - Sprawdź aktualne statystyki");
             System.out.println("9 - wyjscie z gry");
 
@@ -80,6 +81,9 @@ public class Game {
                 }
                 case 5 -> {
                     witcher.fight(griffin);
+                }
+                case 6 ->{
+                    witcher.karczma();
                 }
                 case 0 -> {
                     witcher.showStats();
